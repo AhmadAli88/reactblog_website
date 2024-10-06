@@ -1,5 +1,7 @@
 import React from "react";
 import "./topbar.css";
+import { Link } from "react-router-dom";
+import { IMAGES } from "../../assets/images";
 
 const Topbar = () => {
   return (
@@ -12,17 +14,18 @@ const Topbar = () => {
       </div>
       <div className="topCenter">
         <div className="topList">
-          <div className="topListItem">Home</div>
-          <div className="topListItem">About</div>
-          <div className="topListItem">Contact</div>
-          <div className="topListItem">Write</div>
-          <div className="topListItem">Logout</div>
+          <div className="topListItem"><Link to="/">Home</Link></div>
+          <div className="topListItem"><Link to="/single">Single Post</Link></div>
+          <div className="topListItem"><Link to="/write">Write Post</Link></div>
+          <div className="topListItem"><Link to="/settings">Settings</Link></div>
+          <div className="topListItem"><Link to="/login">Login</Link></div>
+          <div className="topListItem"><Link to="/register">Register</Link></div>
         </div>
       </div>
       <div className="topRight">
         <img
           className="topImg"
-          src="https://fastly.picsum.photos/id/866/200/300.jpg?hmac=rcadCENKh4rD6MAp6V_ma-AyWv641M4iiOpe1RyFHeI"
+          src={IMAGES.PIC1}
           alt=""
           srcset=""
         />

@@ -1,10 +1,11 @@
 import React from "react";
 import "./post.css";
-const Post = () => {
+import { IMAGES } from "../../assets/images";
+const Post = ({image}) => {
   return (
     <div className="post">
       <img
-        src="https://picsum.photos/200/300"
+        src={image}
         className="postImg"
         style={{ width: "100%" }}
         alt=""

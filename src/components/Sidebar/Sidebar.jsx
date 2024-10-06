@@ -1,12 +1,13 @@
 import React from "react";
 import "./sidebar.css";
+import { IMAGES } from "../../assets/images";
 
 const Sidebar = () => {
   return (
     <div className="sidebar">
       <div className="sidebarItem">
         <span className="sidebarTitle">About me</span>
-        <img src="https://picsum.photos/200/300" alt="" srcset="" />
+        <img src={IMAGES.PIC2} className="sidebarImage" alt="" srcset="" />
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum
           libero nesciunt atque ex eveniet itaque repellendus pariatur,

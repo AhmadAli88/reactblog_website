@@ -1,5 +1,6 @@
 import React from 'react'
 import "./header.css"
+import { IMAGES } from '../../assets/images'
 
 const Header = () => {
   return (
@@ -8,7 +9,7 @@ const Header = () => {
             <span className='headerTitleSm'>React and Node</span>
             <span className='headerTitleLg'>Blog</span>
         </div>
-        <img className='headerImg' src="https://picsum.photos/id/1060/536/354?blur=2" alt="" srcset="" />
+        <img className='headerImg' src={IMAGES.PIC1} alt="" srcset="" />
     </div>
   )
 }

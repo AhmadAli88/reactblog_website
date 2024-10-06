@@ -1,12 +1,13 @@
 import React from "react";
 import "./singlepost.css";
+import { IMAGES } from "../../assets/images";
 
 const SinglePost = () => {
   return (
     <div className="singlePost">
       <div className="singlePostWrapper">
         <img
-          src="https://picsum.photos/id/870/200/300?grayscale&blur=2"
+          src={IMAGES.PIC16}
           className="singlePostImg"
           alt=""
           srcset=""
